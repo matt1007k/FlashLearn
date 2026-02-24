@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">FlashLearn</string>
+    <string name="home_title">My Decks</string>
+    <string name="home_goal_title">Today’s Goal</string>
+    <string name="home_goal_card_count">%1$d card%2$d</string>
+    <string name="home_goal_progress">%1$d of %2$d card%3$d reviewed</string>
+    <string name="home_recent_title">Recent Decks</string>
+    <string name="see_all">See all</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_add">Add</string>
+    <string name="nav_stats">Stats</string>
+    <string name="nav_profile">Profile</string>
+    <string name="study_progress">Card %1$d of %2$d</string>
+    <string name="study_question">Question</string>
+    <string name="study_min">m</string>
+    <string name="study_hour">h</string>
+    <string name="study_day">d</string>
+    <string name="study_again">Again</string>
+    <string name="study_hard">Hard</string>
+    <string name="study_good">Good</string>
+    <string name="study_easy">Easy</string>
+</resources>

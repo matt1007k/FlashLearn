@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">FlashLearn</string>
+    <string name="home_title">Mis Mazos</string>
+    <string name="home_goal_title">El objetivo de hoy</string>
+    <string name="home_goal_card_count">%1$d tarjeta%2$d</string>
+    <string name="home_goal_progress">%1$d de %2$d tarjeta%3$d revisadas</string>
+    <string name="home_recent_title">Barajas recientes</string>
+    <string name="see_all">Ver todos</string>
+    <string name="nav_home">Inicio</string>
+    <string name="nav_add">Agregar</string>
+    <string name="nav_stats">Estadísticas</string>
+    <string name="nav_profile">Perfil</string>
+    <string name="study_progress">Tarjeta %1$d de %2$d</string>
+    <string name="study_question">Pregunta</string>
+    <string name="study_min">m</string>
+    <string name="study_hour">h</string>
+    <string name="study_day">d</string>
+    <string name="study_again">De nuevo</string>
+    <string name="study_hard">Dificil</string>
+    <string name="study_good">Bien</string>
+    <string name="study_easy">Fácil</string>
+</resources>
