@@ -23,7 +23,9 @@ kotlin {
             implementation(libs.androidx.activity.compose)
         }
         commonMain.dependencies {
+            implementation(projects.coreDatabase)
             implementation(projects.common.ui)
+
             implementation(projects.home.ui)
 
             implementation(libs.compose.runtime)
@@ -44,6 +46,11 @@ kotlin {
             implementation(libs.material.icons.extended)
 
             implementation(libs.androidx.material3.adaptive.navigation.suite)
+
+            implementation(libs.koin.core)
+            implementation(libs.koin.androidx.compose)
+
+            implementation(libs.datetime)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
