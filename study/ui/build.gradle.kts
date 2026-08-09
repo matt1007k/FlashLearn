@@ -3,11 +3,9 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
-    alias(libs.plugins.androidApplication)
+    alias(libs.plugins.androidLibrary)
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
-    alias(libs.plugins.jetbrains.kotlin.serialization)
-
 }
 
 kotlin {
@@ -16,18 +14,14 @@ kotlin {
             jvmTarget.set(JvmTarget.JVM_11)
         }
     }
-    
+
     sourceSets {
         androidMain.dependencies {
             implementation(libs.compose.uiToolingPreview)
             implementation(libs.androidx.activity.compose)
         }
         commonMain.dependencies {
-            implementation(projects.coreDatabase)
             implementation(projects.common.ui)
-
-            implementation(projects.home.ui)
-            implementation(projects.study.ui)
 
             implementation(libs.compose.runtime)
             implementation(libs.compose.foundation)
@@ -35,23 +29,12 @@ kotlin {
             implementation(libs.compose.ui)
             implementation(libs.compose.components.resources)
             implementation(libs.compose.uiToolingPreview)
-            implementation(libs.androidx.lifecycle.viewmodelCompose)
-            implementation(libs.androidx.lifecycle.runtimeCompose)
+
             // Navigation 3
-            implementation(libs.androidx.navigation3.ui)
             implementation(libs.androidx.navigation3.runtime)
-            implementation(libs.androidx.lifecycle.viewmodel.navigation3)
             implementation(libs.androidx.material3.adaptive.navigation3)
-            implementation(libs.kotlinx.serialization.core)
 
             implementation(libs.material.icons.extended)
-
-            implementation(libs.androidx.material3.adaptive.navigation.suite)
-
-            implementation(libs.koin.core)
-            implementation(libs.koin.androidx.compose)
-
-            implementation(libs.datetime)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
@@ -60,15 +43,12 @@ kotlin {
 }
 
 android {
-    namespace = "dev.maxmeza.flashlearn"
+    namespace = "dev.maxmeza.study.ui"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "dev.maxmeza.flashlearn"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
-        versionCode = 1
-        versionName = "1.0"
     }
     packaging {
         resources {
@@ -89,4 +69,3 @@ android {
 dependencies {
     debugImplementation(libs.compose.uiTooling)
 }
-

@@ -37,3 +37,4 @@ include(":common:domain")
 include(":common:ui")
 
 include(":home:ui")
+include(":study:ui")

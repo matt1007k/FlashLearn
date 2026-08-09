@@ -56,7 +56,21 @@ data class AppThemeExtraColors(
     val yellow: Color = Color.Unspecified,
     val yellowLight: Color = Color.Unspecified,
     val orange: Color = Color.Unspecified,
-    val orangeLight: Color = Color.Unspecified
+    val orangeLight: Color = Color.Unspecified,
+    val flashcardBackground: Color = Color.Unspecified,
+    val flashcardIconBackground: Color = Color.Unspecified,
+    val progressTrack: Color = Color.Unspecified,
+    val ratingHardBackground: Color = Color.Unspecified,
+    val ratingMediumBackground: Color = Color.Unspecified,
+    val ratingEasyBackground: Color = Color.Unspecified,
+    val learningTipBackground: Color = Color.Unspecified,
+    val learningTipIconBackground: Color = Color.Unspecified,
+    val languageBadgeBackground: Color = Color.Unspecified,
+    val surfaceCard: Color = Color.Unspecified,
+    val canvasBackground: Color = Color.Unspecified,
+    val canvasShadowText: Color = Color.Unspecified,
+    val canvasStroke: Color = Color.Unspecified,
+    val canvasBorder: Color = Color.Unspecified
 )
 
 val LocalAppThemeExtraColors = staticCompositionLocalOf { AppThemeExtraColors() }
@@ -77,7 +91,21 @@ val lightExtraColors = AppThemeExtraColors(
     yellow = yellowColor,
     yellowLight = yellowLightColor,
     orange = orangeColor,
-    orangeLight = orangeLightColor
+    orangeLight = orangeLightColor,
+    flashcardBackground = Color(0xFFF5F3FF),
+    flashcardIconBackground = Color(0xFFE8E4FF),
+    progressTrack = Color(0xFFF0F0F0),
+    ratingHardBackground = Color(0xFFFCE4EC),
+    ratingMediumBackground = Color(0xFFFFF8E1),
+    ratingEasyBackground = Color(0xFFE8F5E9),
+    learningTipBackground = Color(0xFFF5F3FF),
+    learningTipIconBackground = Color(0xFFE8E4FF),
+    languageBadgeBackground = Color(0xFFFCE4EC),
+    surfaceCard = Color(0xFFF5F3FF),
+    canvasBackground = Color(0xFFFFFFFF),
+    canvasShadowText = Color(0xFFE0D8F0),
+    canvasStroke = primaryColor,
+    canvasBorder = Color(0xFFE0D8F0)
 )
 
 val darkExtraColors = AppThemeExtraColors(
@@ -96,5 +124,19 @@ val darkExtraColors = AppThemeExtraColors(
     yellow = yellowColor,
     yellowLight = yellowLightColor,
     orange = orangeColor,
-    orangeLight = orangeLightColor
+    orangeLight = orangeLightColor,
+    flashcardBackground = Color(0xFF1E1B2E),
+    flashcardIconBackground = Color(0xFF2A2640),
+    progressTrack = Color(0xFF3A3A3A),
+    ratingHardBackground = Color(0xFF3A1E22),
+    ratingMediumBackground = Color(0xFF3A3020),
+    ratingEasyBackground = Color(0xFF1E3024),
+    learningTipBackground = Color(0xFF1E1B2E),
+    learningTipIconBackground = Color(0xFF2A2640),
+    languageBadgeBackground = Color(0xFF3A1E22),
+    surfaceCard = Color(0xFF1E1B2E),
+    canvasBackground = Color(0xFF252240),
+    canvasShadowText = Color(0xFF3A3560),
+    canvasStroke = primaryLightColor,
+    canvasBorder = Color(0xFF3A3560)
 )

@@ -21,7 +21,7 @@ import kotlinx.coroutines.Dispatchers
         TagEntity::class,
         FlashcardTagCrossRef::class
     ],
-    version = 1
+    version = 2
 )
 @TypeConverters(Converters::class)
 @ConstructedBy(AppDatabaseConstructor::class)

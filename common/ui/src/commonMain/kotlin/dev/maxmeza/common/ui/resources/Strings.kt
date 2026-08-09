@@ -19,9 +19,16 @@ import dev.maxmeza.flashlearn.common.ui.resources.study_easy
 import dev.maxmeza.flashlearn.common.ui.resources.study_good
 import dev.maxmeza.flashlearn.common.ui.resources.study_hard
 import dev.maxmeza.flashlearn.common.ui.resources.study_hour
+import dev.maxmeza.flashlearn.common.ui.resources.study_learning_tip
+import dev.maxmeza.flashlearn.common.ui.resources.study_learning_tip_text
+import dev.maxmeza.flashlearn.common.ui.resources.study_medium
 import dev.maxmeza.flashlearn.common.ui.resources.study_min
+import dev.maxmeza.flashlearn.common.ui.resources.study_pronunciation
 import dev.maxmeza.flashlearn.common.ui.resources.study_progress
+import dev.maxmeza.flashlearn.common.ui.resources.study_practice_write
 import dev.maxmeza.flashlearn.common.ui.resources.study_question
+import dev.maxmeza.flashlearn.common.ui.resources.study_tap_to_reveal
+import dev.maxmeza.flashlearn.common.ui.resources.study_clear_canvas
 import org.jetbrains.compose.resources.StringResource
 import org.jetbrains.compose.resources.stringResource
 
@@ -47,6 +54,13 @@ object Strings {
     val studyHard = Res.string.study_hard
     val studyGood = Res.string.study_good
     val studyEasy = Res.string.study_easy
+    val studyMedium = Res.string.study_medium
+    val studyPronunciation = Res.string.study_pronunciation
+    val studyLearningTip = Res.string.study_learning_tip
+    val studyLearningTipText = Res.string.study_learning_tip_text
+    val studyTapToReveal = Res.string.study_tap_to_reveal
+    val studyPracticeWrite = Res.string.study_practice_write
+    val studyClearCanvas = Res.string.study_clear_canvas
 }
 @Composable
 fun homeGoalCardCountValue(count: Int): String {

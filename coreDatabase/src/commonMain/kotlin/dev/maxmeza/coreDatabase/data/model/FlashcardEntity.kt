@@ -10,6 +10,10 @@ data class FlashcardEntity(
     @PrimaryKey(autoGenerate = true) val flashcardId: Long = 0,
     val frontSide: String,
     val backSide: String,
+    val definition: String = "",
+    val pronunciation: String = "",
+    val language: String = "",
+    val languageCode: String = "",
     val tags: List<String>,
     val deckOwnerId: Long
 )

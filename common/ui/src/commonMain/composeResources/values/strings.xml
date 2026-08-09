@@ -19,4 +19,11 @@
     <string name="study_hard">Hard</string>
     <string name="study_good">Good</string>
     <string name="study_easy">Easy</string>
+    <string name="study_pronunciation">Pronunciation: %1$s</string>
+    <string name="study_learning_tip">Learning Tip</string>
+    <string name="study_learning_tip_text">Try using this word in a sentence today to help remember it better!</string>
+    <string name="study_tap_to_reveal">Tap to reveal answer</string>
+    <string name="study_medium">Medium</string>
+    <string name="study_practice_write">Trace the strokes</string>
+    <string name="study_clear_canvas">Clear</string>
 </resources>
